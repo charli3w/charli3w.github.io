@@ -1,10 +1,27 @@
+@import './typography.css';
+
+/* Global */
+
 body {
-    font-family: arial;
+    font-family: 'Mononoki', arial;
 }
 
 ul {
     list-style: none;
 }
+
+/* Fullpage.js */
+
+#fp-nav ul li .fp-tooltip {
+    color: black;
+    font-family: 'Mononoki', arial;
+}
+
+#fullpage {
+    margin: 0 360px;
+}
+
+/* Menu */
 
 #menu {
     position: fixed;
@@ -23,26 +40,62 @@ ul {
     text-decoration: none;
 }
 
-.custom-section {
-    text-align: center;
-    font-size: 4em;
-    color: #fff;
+/* Sections */
+
+.section h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 .25em;
 }
 
-.actions {
-    list-style-type: none;
+.section h1 {
+    font-size: 8em;
 }
-.actions button {
-    padding: .93em 1.87em;
-    background: #35495e;
-    border-radius: 5px;
-    border: 0;
-    color: #fff;
-    margin: 7px;
-    font-size: 15px;
-    cursor: pointer;
+
+.section h2 {
+    font-size: 3em;
 }
-.actions button:hover {
-    background: #fff;
-    color: #35495e;
+
+.section h3 {
+    font-size: 1.5em;
+}
+
+/* Portfolio */
+
+.portfolio {
+    display: flex;
+    margin-top: 36px;
+}
+
+.portfolio::before {
+    background-color: black;
+    content: '';
+    margin-right: 48px;
+    width: 3px;
+}
+
+.portfolio .portfolio-row:first-of-type {
+    margin-top: 32px;
+}
+
+.portfolio .portfolio-row {
+    margin-bottom: 48px;
+}
+
+.portfolio-row-header {
+    font-size: 1.75em;
+    margin-bottom: 12px;
+}
+
+.portfolio-row-header::before {
+    background-color: white;
+    border: 3px solid black;
+    content: '';
+    display: block;
+    height: 12px;
+    position: absolute;
+    left: -7px;
+    width: 12px;
+}
+
+.portfolio-row-subheader {
+    margin-bottom: 32px;
 }
