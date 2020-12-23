@@ -18,6 +18,11 @@ ul {
     margin: 12px;
 }
 
+#menu a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .custom-section {
     text-align: center;
     font-size: 4em;
