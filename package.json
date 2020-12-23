@@ -1,1 +1,27 @@
-{"name":"charlie-wang","version":"1.0.0","private":true,"description":"Charlie Wang","author":"charli3w","keywords":["gatsby"],"scripts":{"develop":"gatsby develop","start":"gatsby develop","build":"gatsby build","serve":"gatsby serve","clean":"gatsby clean"},"license":"0BSD","dependencies":{"@fullpage/react-fullpage":"^0.1.18","gatsby":"^2.26.1","react":"^16.13.1","react-dom":"^16.13.1","react-icons":"^4.1.0"},"devDependencies":{"gh-pages":"^3.1.0"}}
+{
+  "name": "charlie-wang",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Charlie Wang",
+  "author": "charli3w",
+  "keywords": ["gatsby"],
+  "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "license": "0BSD",
+  "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.18",
+    "gatsby": "^2.26.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^4.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
