@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactFullpage from '@fullpage/react-fullpage'
+import license from '../private/license.js'
 import resume from '../files/resume.pdf'
 import { FiFileText, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
 import { Helmet } from 'react-helmet'
@@ -55,11 +56,13 @@ class App extends React.Component {
         </Helmet>
         <Menu />
         <ReactFullpage
+          // debug /* Debug logging */
+
           // Required when using extensions
           pluginWrapper={pluginWrapper}
 
           // fullpage options
-          licenseKey={'YOUR_KEY_HERE'}
+          licenseKey={license}
           navigation
           navigationTooltips={['', 'Portfolio']}
           anchors={['', 'portfolio']}
