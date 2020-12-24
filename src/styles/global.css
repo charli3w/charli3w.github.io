@@ -1,0 +1,22 @@
+@import './typography.css';
+
+/* Global */
+
+html,
+body,
+#fullpage,
+.section {
+    height: 100%;
+}
+
+body {
+    font-family: 'Mononoki', arial;
+}
+
+ul {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

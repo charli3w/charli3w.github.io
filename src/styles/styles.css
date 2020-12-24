@@ -1,22 +1,3 @@
-@import './typography.css';
-
-/* Global */
-
-html,
-body,
-#fullpage,
-.section {
-    height: 100%;
-}
-
-body {
-    font-family: 'Mononoki', arial;
-}
-
-ul {
-    list-style: none;
-}
-
 /* Fullpage.js */
 
 #fp-nav ul li .fp-tooltip {
@@ -82,6 +63,13 @@ ul {
 }
 
 /* Sections */
+
+.section:not(.fp-section) {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
 
 .section h1, h2, h3, h4, h5, h6 {
     margin: 0 0 .25em;
