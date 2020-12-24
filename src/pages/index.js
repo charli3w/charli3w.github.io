@@ -1,4 +1,4 @@
-mport React from 'react'
+import React from 'react'
 import ReactFullpage from '@fullpage/react-fullpage'
 import resume from '../files/resume.pdf'
 import { FiFileText, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
