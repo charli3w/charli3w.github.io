@@ -4,7 +4,9 @@
   "private": true,
   "description": "Charlie Wang",
   "author": "charli3w",
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
@@ -17,8 +19,12 @@
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.18",
     "gatsby": "^2.26.1",
+    "gatsby-plugin-manifest": "^2.9.1",
+    "gatsby-plugin-offline": "^3.7.1",
+    "gatsby-plugin-react-helmet": "^3.7.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.1.0"
   },
   "devDependencies": {
