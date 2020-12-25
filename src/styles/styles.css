@@ -1,6 +1,6 @@
 /* Fullpage.js */
 
-#fp-nav ul li .fp-tooltip {
+#fp-nav ul li .fp-tooltip.fp-right {
     color: black;
     font-family: 'Mononoki', arial;
 }
