@@ -5,6 +5,8 @@ import resume from '../files/resume.pdf'
 import { FiFileText, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
 import { Helmet } from 'react-helmet'
 import { IconContext } from 'react-icons'
+import { slide as SlideBurgerMenu } from 'react-burger-menu'
+import '../styles/burgermenu.css'
 import '../styles/styles.css'
 
 // NOTE: if using fullpage extensions/plugins put them here and pass it as props.
@@ -46,6 +48,29 @@ class App extends React.Component {
       </div>
     );
 
+    const BurgerMenu = () => (
+      <div id="burger-menu">
+        <SlideBurgerMenu right width={320}>
+          <a className="menu-item" href="https://linkedin.com/in/ccrwnn" rel="noreferrer noopener" target="_blank">
+            <FiLinkedin />
+            <span>LinkedIn</span>
+          </a>
+          <a className="menu-item" href="https://github.com/charli3w" rel="noreferrer noopener" target="_blank">
+            <FiGithub />
+            <span>GitHub</span>
+          </a>
+          <a className="menu-item" href={resume} rel="noreferrer noopener" target="_blank">
+            <FiFileText />
+            <span>Resume</span>
+          </a>
+          <a className="menu-item" href="mailto:charliehuawang@gmail.com">
+            <FiMail />
+            <span>Email</span>
+          </a>
+        </SlideBurgerMenu>
+      </div>
+    );
+
     return (
       <div className="App">
         <Helmet>
@@ -55,6 +80,7 @@ class App extends React.Component {
           <title>Charlie Wang</title>
         </Helmet>
         <Menu />
+        <BurgerMenu />
         <ReactFullpage
           // debug /* Debug logging */
 

@@ -41,9 +41,24 @@
     margin: 12px;
 }
 
-#menu a {
+#menu a,
+#burger-menu a {
     color: inherit;
     text-decoration: none;
+}
+
+#burger-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    #burger-menu {
+        display: block;
+    }
 }
 
 @media (max-width: 550px) {
@@ -147,8 +162,24 @@
 }
 
 @media (max-width: 550px) {
+    .portfolio {
+        margin-top: 16px;
+    }
+
     .portfolio-row-header {
         font-size: 1.25em;
+    }
+    
+    .portfolio-row-subheader {
+        margin-bottom: 16px;
+    }
+
+    .portfolio .portfolio-row {
+        margin-bottom: 24px;
+    }
+
+    .portfolio .portfolio-row:first-of-type {
+        margin-top: 16px;
     }
 
     .portfolio .portfolio-row:last-of-type,
