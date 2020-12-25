@@ -47,6 +47,11 @@
     text-decoration: none;
 }
 
+#menu a:hover,
+#menu a:active {
+    color: grey;
+}
+
 #burger-menu {
     display: none;
 }
