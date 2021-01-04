@@ -20,3 +20,11 @@ ul {
 ::-webkit-scrollbar {
     display: none;
 }
+
+a:-webkit-any-link {
+    color: inherit;
+}
+
+:focus {
+    outline-color: inherit;
+}
